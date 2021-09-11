@@ -1,0 +1,138 @@
+/* to override the default browser spacing */
+*{
+        padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Lobster',serif;
+    background-color: #ebf2ff;
+}
+
+.navbar{
+    position: sticky;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+    z-index: 999;
+
+
+}
+.navbar__brand{
+    width: 100px;
+}
+
+.brand__logo{
+width: 100px;
+}
+
+.navbar__nav__items{
+    display: flex;
+    
+}
+
+
+.container {
+    padding: 0px 20px;
+}
+
+.hero__container {
+    margin-top: 1rem;
+}
+
+.hero__image__container{
+    
+    position: relative;
+    width: 100%;
+    
+}
+.hero__image {
+    position: absolute;
+    width: 100%;
+    right: auto;
+    left: auto;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+.hero__image__shape {
+    position: absolute;
+    bottom: 5px;
+    
+}
+
+.hero__description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero__text{
+    font-size: 32px;
+}
+
+.video__footage__container{
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.video__footage{
+        position: relative;
+}
+.button__primary {
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+    margin: 10px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    transition: 0.5s;
+    font-weight: 600;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px red;
+    border-radius: 4px;
+    display: block;
+}
+
+.button__primary:hover {
+    background-position: right center;
+}
+
+
+@media (min-width: 1200px) {
+    .navbar {
+        padding: 0 3rem;
+    }
+    .button__primary {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+
+    .hero__container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .hero__image {
+        margin-top: 2rem;
+    }
+
+    .hero__text {
+        font-size: 3rem;
+        line-height: 1;
+    }
+    .container {
+        padding: 0px 200px;
+    }
+}
